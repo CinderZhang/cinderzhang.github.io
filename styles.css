@@ -1,6 +1,8 @@
 :root {
     --primary-color: #00c3ff;
     --secondary-color: #8a2be2;
+    --finance-green: #00d184;
+    --finance-gold: #ffd700;
     --text-color: #ffffff;
     --bg-color: #050520;
     --card-bg: rgba(25, 25, 50, 0.7);
@@ -52,6 +54,8 @@ body {
     background-image: 
         radial-gradient(circle at 20% 15%, rgba(0, 195, 255, 0.2) 0%, transparent 20%),
         radial-gradient(circle at 80% 85%, rgba(138, 43, 226, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 40% 50%, rgba(0, 209, 132, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 60% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 20%),
         url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -129,6 +133,17 @@ header {
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 2px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, var(--finance-green), var(--finance-gold), var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue-rotate 6s infinite linear;
+}
+
+@keyframes hue-rotate {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
 }
 
 /* Glass Cards */
@@ -141,8 +156,8 @@ header {
 
 .glass {
     background: var(--card-bg);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
@@ -154,6 +169,35 @@ header {
 
 .card-content {
     padding: 30px;
+}
+
+.driver-list {
+    margin: 15px 0 25px 20px;
+    list-style-type: none;
+}
+
+.driver-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 5px;
+}
+
+.driver-list li::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to right, var(--primary-color), var(--finance-green));
+    border-radius: 50%;
+}
+
+.driver-list li strong {
+    color: var(--finance-gold);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    margin-right: 2px;
 }
 
 /* Book Display */
@@ -240,6 +284,7 @@ header {
     margin-bottom: 20px;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
 }
 
 /* Buttons */
