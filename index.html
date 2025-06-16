@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinder Zhang | Financial Education Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="glitch-text" data-text="Cinder Zhang">Cinder Zhang</h1>
+            <p class="subtitle">Financial Education in the AI Era</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div class="card glass">
+                <div class="card-content">
+                    <h2>Welcome to my Digital Library</h2>
+                    <p>Discover cutting-edge resources at the intersection of finance and artificial intelligence. My textbooks combine traditional financial wisdom with modern AI-driven techniques to prepare you for the future of finance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="books">
+            <div class="card glass">
+                <div class="book-display">
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <div class="cover-container">
+                                <img src="https://raw.githubusercontent.com/CinderZhang/DRIVER-FinancialManagement/main/textbook_jupyter_book_source/images/DRIVER-FinancialManagement-Cover.png" alt="Financial Management Cover">
+                                <div class="glow-effect"></div>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3>DRIVER: Financial Management</h3>
+                            <p>A comprehensive guide to financial management principles enhanced with AI-driven insights and analysis tools. This textbook bridges theoretical concepts with practical applications in the modern financial landscape.</p>
+                            <div class="button-group">
+                                <a href="https://cinderzhang.github.io/DRIVER-FinancialManagement" class="btn primary">Read Book</a>
+                                <a href="https://github.com/CinderZhang/DRIVER-FinancialManagement" class="btn secondary">View Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <div class="cover-container">
+                                <img src="https://raw.githubusercontent.com/CinderZhang/DRIVER-FinancialModeling/main/financial_modeling_jupyter_book/images/Finance%20with%20AI%20Textbook%20Cover.png" alt="Financial Modeling Cover">
+                                <div class="glow-effect"></div>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3>DRIVER: Financial Modeling</h3>
+                            <p>Master the art of financial modeling with AI-augmented techniques. This book explores advanced modeling methodologies that harness the power of machine learning and data science to create more accurate and robust financial models.</p>
+                            <div class="button-group">
+                                <a href="https://cinderzhang.github.io/DRIVER-FinancialModeling" class="btn primary">Read Book</a>
+                                <a href="https://github.com/CinderZhang/DRIVER-FinancialModeling" class="btn secondary">View Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <div class="card glass">
+                <div class="card-content">
+                    <h2>AI & Financial Resources</h2>
+                    <div class="resource-grid">
+                        <div class="resource-category">
+                            <h3>AI Tools</h3>
+                            <ul class="resource-list">
+                                <li><a href="https://chat.openai.com/" target="_blank"><i class="fa-solid fa-robot"></i> ChatGPT</a></li>
+                                <li><a href="https://claude.ai/" target="_blank"><i class="fa-solid fa-brain"></i> Claude</a></li>
+                                <li><a href="https://colab.google/" target="_blank"><i class="fa-brands fa-google"></i> Google Colab</a></li>
+                                <li><a href="https://ai.google.dev/" target="_blank"><i class="fa-solid fa-code"></i> Google AI Studio</a></li>
+                                <li><a href="https://www.perplexity.ai/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Perplexity</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="resource-category">
+                            <h3>Financial Data</h3>
+                            <ul class="resource-list">
+                                <li><a href="https://fred.stlouisfed.org/" target="_blank"><i class="fa-solid fa-chart-line"></i> FRED</a></li>
+                                <li><a href="https://www.wsj.com/" target="_blank"><i class="fa-solid fa-newspaper"></i> Wall Street Journal</a></li>
+                                <li><a href="https://financialdatasets.ai/" target="_blank"><i class="fa-solid fa-database"></i> Financialdatasets.ai</a></li>
+                                <li><a href="https://www.bloomberg.com/" target="_blank"><i class="fa-solid fa-building-columns"></i> Bloomberg</a></li>
+                                <li><a href="https://finance.yahoo.com/" target="_blank"><i class="fa-solid fa-chart-pie"></i> Yahoo Finance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Cinder Zhang | <a href="https://github.com/CinderZhang" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Parallax effect for glowing elements
+        document.addEventListener('mousemove', function(e) {
+            const covers = document.querySelectorAll('.cover-container');
+            const moveX = (e.clientX - window.innerWidth / 2) / 25;
+            const moveY = (e.clientY - window.innerHeight / 2) / 25;
+            
+            covers.forEach(cover => {
+                cover.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+                cover.querySelector('.glow-effect').style.transform = `translateX(${-moveX*1.5}px) translateY(${-moveY*1.5}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
