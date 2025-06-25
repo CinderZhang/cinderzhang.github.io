@@ -178,6 +178,7 @@ header {
     background: linear-gradient(135deg, rgba(0, 195, 255, 0.1), rgba(138, 43, 226, 0.1));
     border-radius: 10px;
     border: 1px solid rgba(0, 195, 255, 0.3);
+    text-align: center;
 }
 
 .value-proposition h3 {
@@ -185,7 +186,6 @@ header {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.1rem;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .formula {
@@ -413,15 +413,42 @@ header {
 }
 
 .secondary:hover {
-    background: rgba(0, 195, 255, 0.1);
-    box-shadow: 0 0 10px var(--primary-color);
+background: rgba(0, 195, 255, 0.1);
+box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Learn More Button */
+.learn-more-btn {
+display: inline-block;
+margin-top: 15px;
+font-weight: 600;
+padding: 8px 15px;
+border-radius: 5px;
+transition: all 0.3s ease;
+background-color: transparent;
+border: 1px solid var(--finance-green);
+color: var(--finance-green);
+}
+
+.learn-more-btn:hover {
+background-color: var(--finance-green);
+color: var(--bg-color);
+}
+
+.learn-more-btn i {
+margin-left: 5px;
+transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover i {
+transform: translateX(5px);
 }
 
 /* Resources Section */
 .resource-grid {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr;
+display: grid;
+gap: 30px;
+grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {

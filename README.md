@@ -1,5 +1,4 @@
 # DRIVER Framework: AI-Integrated Finance Education
-=====================================================
 
 ## Finance Expert + AI Leverage + Software Engineering Mindset = Super Hot Candidate
 
