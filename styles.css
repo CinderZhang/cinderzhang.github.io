@@ -496,6 +496,63 @@ grid-template-columns: 1fr;
     text-align: center;
 }
 
+/* Educators Section */
+.educators-section {
+    margin: 50px 0;
+}
+
+.educator-benefits,
+.perfect-for {
+    margin: 30px 0;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.check-list li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.check-list li i {
+    color: var(--finance-green);
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.educator-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 20px 20px;
+}
+
+.educator-list li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.educator-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.cta-text {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--finance-gold);
+}
+
 /* Footer */
 footer {
     padding: 40px 0;

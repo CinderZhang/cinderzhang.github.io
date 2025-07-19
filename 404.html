@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - DRIVER Finance Education</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Explore DRIVER framework resources for AI-integrated finance education.">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        // Capture search intent from URL
+        const path = window.location.pathname.toLowerCase();
+        const redirects = {
+            'finance': '/',
+            'driver': '/',
+            'ai': '/why-driver.html',
+            'management': '/DRIVER-FinancialManagement',
+            'modeling': '/DRIVER-FinancialModeling',
+            'investment': '/DRIVER-EssentialsofInvestment'
+        };
+        
+        // Auto-redirect based on keywords
+        for (const [keyword, redirect] of Object.entries(redirects)) {
+            if (path.includes(keyword)) {
+                window.location.href = redirect;
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="glitch-text" data-text="404 - Page Not Found">404 - Page Not Found</h1>
+            <p class="subtitle">Let's find what you're looking for</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <div class="card glass">
+                <div class="card-content" style="text-align: center;">
+                    <h2>Oops! This page doesn't exist.</h2>
+                    <p style="font-size: 1.2rem; margin: 20px 0;">Were you looking for one of these DRIVER resources?</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 40px 0;">
+                        <a href="/" class="btn primary" style="text-decoration: none;">
+                            <i class="fas fa-home"></i> DRIVER Home
+                        </a>
+                        <a href="/why-driver.html" class="btn secondary" style="text-decoration: none;">
+                            <i class="fas fa-question-circle"></i> Why DRIVER?
+                        </a>
+                        <a href="https://cinderzhang.github.io/DRIVER-FinancialManagement" class="btn primary" style="text-decoration: none;">
+                            <i class="fas fa-book"></i> Financial Management
+                        </a>
+                        <a href="https://cinderzhang.github.io/DRIVER-FinancialModeling" class="btn primary" style="text-decoration: none;">
+                            <i class="fas fa-chart-line"></i> Financial Modeling
+                        </a>
+                        <a href="https://cinderzhang.github.io/DRIVER-EssentialsofInvestment" class="btn primary" style="text-decoration: none;">
+                            <i class="fas fa-coins"></i> Investment Essentials
+                        </a>
+                    </div>
+                    
+                    <p>Or return to the <a href="/" style="color: var(--primary-color);">homepage</a> to explore all resources.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

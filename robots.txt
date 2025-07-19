@@ -1,0 +1,20 @@
+# Robots.txt for DRIVER Finance Education
+User-agent: *
+Allow: /
+Sitemap: https://cinderzhang.github.io/sitemap.xml
+
+# Optimize for AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
