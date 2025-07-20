@@ -12,14 +12,16 @@
   - 404.html
 - [ ] Commit and push changes
 
-### 2. Enable GitHub Discussions
+### 2. Enable GitHub Discussions ✅
 For each repository below:
-- [ ] Go to Settings → Features → Check "Discussions" → Set up
+- [x] Go to Settings → Features → Check "Discussions" → Set up
 
 Repositories:
-- [ ] https://github.com/CinderZhang/DRIVER-FinancialManagement
-- [ ] https://github.com/CinderZhang/DRIVER-FinancialModeling
-- [ ] https://github.com/CinderZhang/DRIVER-EssentialsofInvestment
+- [x] https://github.com/CinderZhang/DRIVER-FinancialManagement
+- [x] https://github.com/CinderZhang/DRIVER-FinancialModeling
+- [x] https://github.com/CinderZhang/DRIVER-EssentialsofInvestment
+
+**Completed**: Discussion links added to homepage for all books!
 
 ### 3. LinkedIn Outreach
 - [ ] Send message to David A. Wood with DRIVER introduction

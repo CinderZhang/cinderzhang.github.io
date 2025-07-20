@@ -4,7 +4,9 @@
       "Bash(git add:*)",
       "Bash(git push:*)",
       "Bash(gh repo list:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:jupyterbook.org)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": []
   }
