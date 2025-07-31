@@ -48,48 +48,31 @@ Students learn to:
 
 ### Presentation Materials
 
-The `/Slides` folder contains presentation materials for introducing the DRIVER framework:
+The DRIVER presentation materials are now hosted in a separate repository for better organization:
 
-* **Intro2DRIVER Opening Talk** - Introduction slides for the first day of class (PDF and Markdown formats)
+* **[DRIVER Presentations Repository](https://github.com/CinderZhang/DRIVER-Presentations)** - All presentation materials
+* **[WISDOM Opening Talk](https://cinderzhang.github.io/DRIVER-Presentations/wisdom-opening-talk/)** - Interactive web presentation on AI and wisdom
+
+The presentations repository includes:
+* **WISDOM Opening Talk** - Interactive Slidev presentation about wisdom in the age of AI
+* **Intro2DRIVER Opening Talk** - Introduction slides for the first day of class
 * **Summer 2025 Opening Speech** - LaTeX/Beamer presentation for summer session
-* **DRIVER Opening Talk (Slidev)** - Interactive web-based presentation built with Slidev
-
-#### Running the Slidev Presentation
-
-To run the interactive Slidev presentation locally:
-
-```bash
-# Navigate to the Slidev directory
-cd Slides/DRIVER-Opening-Talk-Slidev
-
-# Install dependencies (first time only)
-npm install
-
-# Start the development server
-npm run dev
-
-# The presentation will be available at http://localhost:3030
-# Presenter mode: http://localhost:3030/presenter/
-# Overview: http://localhost:3030/overview/
-```
-
-Additional Slidev commands:
-* `npm run build` - Build the presentation for production
-* `npm run export` - Export the presentation as PDF
 
 ### Repository Structure
 
 ```
 cinderzhang.github.io/
 ├── index.html              # Main website homepage
+├── student-portal.html     # Student-focused landing page
 ├── why-driver.html         # Detailed explanation of DRIVER philosophy
 ├── discussion-welcome.md   # Community discussion guidelines
-├── Slides/                 # Presentation materials
-│   ├── DRIVER-Opening-Talk-Slidev/    # Interactive web presentation
-│   ├── Intro2DRIVER_Opening_Talk.pdf  # PDF introduction slides
-│   └── Summer2025_opening_speech.pdf  # Beamer presentation
-└── images/                 # Textbook covers and visual assets
+├── styles.css              # Website styling
+├── wisdom-presentation/    # Built presentation (deployed)
+├── images/                 # Textbook covers and visual assets
+└── Slides/                 # PDF presentation archives
 ```
+
+Presentation source files are maintained in the [DRIVER-Presentations](https://github.com/CinderZhang/DRIVER-Presentations) repository.
 
 ### Why Now
 

@@ -15,7 +15,16 @@
       "Bash(mkdir:*)",
       "Bash(xcopy:*)",
       "Bash(robocopy:*)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "WebFetch(domain:sli.dev)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(git init:*)",
+      "Bash(dir)",
+      "Bash(del:*)",
+      "Bash(dir:*)",
+      "Bash(cmd /c:*)",
+      "Bash(tasklist:*)"
     ],
     "deny": []
   }
