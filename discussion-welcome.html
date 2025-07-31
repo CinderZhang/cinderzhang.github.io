@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVER Community Forum - Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://github.com/CinderZhang/cinderzhang.github.io/discussions">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .redirect-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+        }
+        
+        .redirect-container h1 {
+            margin-bottom: 20px;
+            color: #4ECDC4;
+        }
+        
+        .redirect-container p {
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .redirect-container a {
+            color: #4ECDC4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .redirect-container a:hover {
+            text-decoration: underline;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #4ECDC4;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4ECYP90Q4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L4ECYP90Q4');
+    </script>
+</head>
+<body>
+    <div class="redirect-container">
+        <h1>Welcome to the DRIVER Community!</h1>
+        <p>
+            Redirecting you to our GitHub Discussions forum
+            <span class="loading-spinner"></span>
+        </p>
+        <p>
+            If you're not automatically redirected, 
+            <a href="https://github.com/CinderZhang/cinderzhang.github.io/discussions">click here to join the discussion</a>
+        </p>
+    </div>
+    
+    <script>
+        // Backup JavaScript redirect
+        setTimeout(function() {
+            window.location.href = "https://github.com/CinderZhang/cinderzhang.github.io/discussions";
+        }, 100);
+    </script>
+</body>
+</html>

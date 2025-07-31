@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVER Student Portal - Transform Your Finance Career with AI</title>
+    <meta name="description" content="Join the 100% of DRIVER students who landed their dream jobs. Learn to think strategically with AI as your partner in finance.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Student Portal Specific Styles */
+        .hero-student {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-student::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        
+        .hero-student h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-student p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .wisdom-embed {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .transformation-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FF6B6B;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.2em;
+            color: #666;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 20px 40px;
+            background: #4ECDC4;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(78, 205, 196, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(78, 205, 196, 0.4);
+        }
+        
+        .audience-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.9);
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .audience-btn {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .audience-btn.educator {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .audience-btn.student {
+            background: #4ECDC4;
+            color: white;
+        }
+        
+        .audience-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4ECYP90Q4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L4ECYP90Q4');
+    </script>
+</head>
+<body>
+    <!-- Audience Toggle -->
+    <div class="audience-toggle">
+        <a href="index.html" class="audience-btn educator">For Educators</a>
+        <a href="student-portal.html" class="audience-btn student">For Students</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-student">
+        <div class="container">
+            <h1>Ready to Transform Your Career?</h1>
+            <p>Join the 100% of DRIVER students who landed their dream jobs</p>
+            <a href="#wisdom-presentation" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Transformation Stats -->
+    <section class="container">
+        <div class="transformation-stats">
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Job Placement Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10x</div>
+                <div class="stat-label">Productivity Increase</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Stages to Mastery</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Future Possibilities</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WISDOM Presentation -->
+    <section class="container" id="wisdom-presentation">
+        <div class="content">
+            <h2>Experience the WISDOM Presentation</h2>
+            <p class="lead">This isn't just another lecture. It's your wake-up call to the AI revolution in finance.</p>
+            
+            <iframe src="wisdom-presentation/index.html" class="wisdom-embed" title="WISDOM IN THE AGE OF INTELLIGENCE"></iframe>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="wisdom-presentation/index.html" target="_blank" class="btn secondary">Open in Full Screen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="container">
+        <div class="content">
+            <h2>What Makes DRIVER Different?</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Think Like a Pro</h3>
+                    <p>Learn the six-stage DRIVER framework that transforms how you approach financial problems</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Code From Day One</h3>
+                    <p>Build real financial tools with Python while AI handles the tedious parts</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Strategic AI Partnership</h3>
+                    <p>Master the art of AI collaboration - know when to lead and when to leverage</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Video-Based Learning</h3>
+                    <p>Prove your understanding through video presentations, not multiple-choice tests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section class="feature-section">
+        <div class="container">
+            <h2>From Students to Industry Leaders</h2>
+            
+            <blockquote class="testimonial">
+                <p>"DRIVER didn't just teach me finance - it taught me how to think. Now I'm leading AI initiatives at a Fortune 500 company."</p>
+                <cite>- Sarah Chen, Investment Banking Analyst</cite>
+            </blockquote>
+            
+            <blockquote class="testimonial">
+                <p>"The combination of Python skills and strategic thinking made me stand out. I had 5 job offers before graduation."</p>
+                <cite>- Marcus Rodriguez, Quantitative Analyst</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="container">
+        <div class="content" style="text-align: center;">
+            <h2>Ready to Begin?</h2>
+            <p class="lead">Choose your path and start building your AI-augmented finance career today.</p>
+            
+            <div style="margin: 40px 0;">
+                <a href="https://cinderzhang.github.io/DRIVER-FinancialManagement" class="cta-button" style="margin: 10px;">
+                    Start with Financial Management
+                </a>
+                <a href="https://cinderzhang.github.io/DRIVER-FinancialModeling" class="cta-button" style="margin: 10px;">
+                    Jump into Financial Modeling
+                </a>
+            </div>
+            
+            <p style="margin-top: 30px;">
+                <a href="https://github.com/CinderZhang/cinderzhang.github.io/discussions" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-comments"></i> Join the Community Forum
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Cinder Zhang. All rights reserved. | <a href="index.html">Educator Portal</a> | <a href="why-driver.html">Why DRIVER?</a></p>
+        </div>
+    </footer>
+</body>
+</html>

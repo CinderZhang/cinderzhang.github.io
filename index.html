@@ -136,6 +136,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
+    <!-- Audience Toggle Styles -->
+    <style>
+        .audience-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .audience-btn {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .audience-btn.educator {
+            background: #333;
+            color: white;
+        }
+        
+        .audience-btn.student {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .audience-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .audience-toggle {
+                top: 10px;
+                right: 10px;
+                padding: 5px;
+            }
+            
+            .audience-btn {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4ECYP90Q4"></script>
     <script>
@@ -147,6 +199,12 @@
 </head>
 <body>
     <div class="background-animation"></div>
+    
+    <!-- Audience Toggle -->
+    <div class="audience-toggle">
+        <a href="index.html" class="audience-btn educator">For Educators</a>
+        <a href="student-portal.html" class="audience-btn student">For Students</a>
+    </div>
     
     <header>
         <div class="container">
@@ -311,6 +369,28 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Section -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="content" style="text-align: center;">
+                    <h2>Students: Ready to Transform Your Career?</h2>
+                    <p class="lead">Join the 100% of DRIVER students who landed their dream jobs in finance</p>
+                    
+                    <div class="card glass" style="background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%); color: white; padding: 40px; margin: 30px auto; max-width: 600px;">
+                        <h3 style="color: white; margin-bottom: 20px;">Your Journey Starts Here</h3>
+                        <p style="font-size: 1.2em; margin-bottom: 30px;">Experience the WISDOM presentation that's transforming how students think about AI and finance</p>
+                        <a href="student-portal.html" class="btn primary" style="background: white; color: #4ECDC4; font-size: 1.2em; padding: 15px 40px;">
+                            <i class="fas fa-play-circle"></i> Start Your Journey
+                        </a>
+                    </div>
+                    
+                    <p style="margin-top: 20px;">
+                        <a href="student-portal.html" style="color: #4ECDC4;">Learn more about the student experience →</a>
+                    </p>
                 </div>
             </div>
         </section>
