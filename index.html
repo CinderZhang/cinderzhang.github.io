@@ -192,13 +192,21 @@
 <body>
     <div class="background-animation"></div>
     
-    <!-- Audience Toggle -->
-    <div class="audience-toggle">
-        <a href="index.html" class="audience-btn">For Educators</a>
-    </div>
-    
     <header>
-        <div class="container">
+        <nav class="main-nav">
+            <div class="container nav-container">
+                <div class="nav-left">
+                    <a href="#home" class="nav-brand">🚀 DRIVER Framework</a>
+                </div>
+                <div class="nav-right">
+                    <a href="#books" class="nav-link">Textbooks</a>
+                    <a href="for-educators.html" class="nav-link">For Educators</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                    <a href="why-driver.html" class="nav-link highlight">Why DRIVER?</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero-section" id="home">
             <h1 class="glitch-text" data-text="Dr. Cinder Zhang"><a href="https://www.linkedin.com/in/cinder-zhang" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Dr. Cinder Zhang</a></h1>
             <p class="subtitle">Finance + AI Education Pioneer</p>
         </div>
@@ -220,17 +228,31 @@
                     
                     <div class="urgency-callout">
                         <p><strong>Why This Matters Now:</strong> Finance roles requiring AI collaboration skills are growing 40% faster than traditional positions. Students using DRIVER graduate with exactly what employers can't find elsewhere.</p>
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Faster Growth</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Open Source</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Free Textbooks</span>
+                            </div>
+                        </div>
                         <div class="button-group">
-                            <a href="why-driver.html" class="btn secondary">Learn More <i class="fas fa-arrow-right"></i></a>
-                            <a href="https://github.com/CinderZhang/cinderzhang.github.io/discussions" class="btn secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-comments"></i> Community Forum</a>
-                            <a href="https://www.linkedin.com/in/cinder-zhang" class="btn secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="why-driver.html" class="btn primary pulse">Discover DRIVER →</a>
+                            <a href="https://github.com/CinderZhang/cinderzhang.github.io/discussions" class="btn secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-comments"></i> Join Community</a>
+                            <a href="https://www.linkedin.com/in/cinder-zhang" class="btn secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Connect</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="books">
+        <section class="books" id="books">
             <div class="card glass">
                 <div class="book-display">
                     <div class="book-item">
@@ -303,7 +325,7 @@
             </div>
         </section>
 
-        <section class="educators-section">
+        <section class="educators-section" id="educators">
             <div class="card glass">
                 <div class="card-content">
                     <h2>For Educators: Enhancing Finance Education with AI</h2>
@@ -333,7 +355,7 @@
             </div>
         </section>
 
-        <section class="resources">
+        <section class="resources" id="resources">
             <div class="card glass">
                 <div class="card-content">
                     <h2>AI & Financial Resources</h2>
