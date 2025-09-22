@@ -373,6 +373,171 @@ header {
     margin-right: 2px;
 }
 
+/* Tesla Quote Block */
+.tesla-quote {
+    background: linear-gradient(135deg, rgba(0, 195, 255, 0.1), rgba(138, 43, 226, 0.1));
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin: 30px 0;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.tesla-quote p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.tesla-quote p:first-child {
+    color: var(--primary-color);
+    font-size: 1.15em;
+}
+
+/* Power Grid */
+.power-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.power-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.power-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 195, 255, 0.2);
+}
+
+.power-item i {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.power-item strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.power-item p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* Audience Cards */
+.audience-messages {
+    display: grid;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.audience-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.audience-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--finance-green));
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.audience-card:hover::before {
+    opacity: 0.3;
+}
+
+.audience-card:hover {
+    transform: translateX(5px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.audience-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.audience-card p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+/* Educator Quote */
+.educator-quote {
+    background: linear-gradient(135deg, rgba(0, 209, 132, 0.1), rgba(255, 215, 0, 0.1));
+    border-left: 4px solid var(--finance-green);
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin: 30px 0;
+    backdrop-filter: blur(10px);
+}
+
+.educator-quote p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Impact Statement */
+.impact-statement {
+    background: rgba(255, 215, 0, 0.05);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 1.15em;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.impact-statement strong {
+    color: var(--finance-gold);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* DRIVER List with Icons */
+.driver-list li {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px 0;
+    padding-left: 5px;
+}
+
+.driver-list li strong {
+    color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
 /* Book Display */
 .book-display {
     padding: 30px;
